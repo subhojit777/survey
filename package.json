@@ -4,7 +4,9 @@
   "description": "Survey",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babelify index.jsx --out-dir=lib --modules umd --module-id QuestionAnswer",
+    "prerelease": "npm run build"
   },
   "repository": {
     "type": "git",
